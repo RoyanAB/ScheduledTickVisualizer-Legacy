@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "scheduledtickvisualizer",
+  "version": "${version}",
+
+  "name": "ScheduledTickVisualizer",
+  "description": "A mod that shows the block movement order of a piston",
+  "authors": [
+    "AB"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/pistorder",
+    "sources": "https://github.com/Fallen-Breath/pistorder"
+  },
+
+  "icon": "assets/scheduledtickvisualizer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "cn.royan.scheduledtickvisualizer.ScheduledTickVisualizer"
+    ]
+  },
+  "mixins": [
+    "scheduledtickvisualizer.mixins.json"
+  ],
+  "accessWidener": "scheduledtickvisualizer.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.12.2",
+    "osl-entrypoints": ">=0.4.0"
+  }
+}
